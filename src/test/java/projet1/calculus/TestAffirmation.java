@@ -55,4 +55,9 @@ public class TestAffirmation {
         assertEquals(Resultat.FAUX, Resultat.calculer(phrase));
     }
 
+    @Test
+    public void testValeurIndeterminee() {
+        AffirmationGenerale affirmationIndeterminee = new AffirmationGenerale(null);
+        assertThrows(RuntimeException.class, affirmationIndeterminee::estVraie);
+    }
 }

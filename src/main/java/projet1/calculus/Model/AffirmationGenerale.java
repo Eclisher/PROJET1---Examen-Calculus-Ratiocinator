@@ -8,8 +8,8 @@ public class AffirmationGenerale extends  Affirmation {
     private  Boolean valeur;
     @Override
     public boolean estVraie() {
-        if (valeur == null){
-            throw new RuntimeException("Valeur null");
+        if (valeur == null) {
+            throw new RuntimeException("Valeur indéterminée");
         }
         return valeur;
     }
